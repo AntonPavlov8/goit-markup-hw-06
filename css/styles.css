@@ -384,14 +384,23 @@ address {
   display: inline-flex;
   align-items: center;
   background-color: var(--accent-color);
-  border: none;
+  border: 4px solid var(--accent-color);
   border-radius: 4px;
-  padding: 10px 28px 10px 48px;
+  padding: 6px 24px 6px 44px;
   height: 50px;
   color: #fff;
   font: 700 16px/30px Roboto;
   letter-spacing: 0.06em;
   cursor: pointer;
+  fill: #fff;
+  transition-duration: 0.4s;
+}
+.footer-submit-button:hover {
+  border: 4px solid var(--accent-color);
+  background-color: var(--background-grey);
+  color: #000000;
+  cursor: pointer;
+  fill: #000000;
 }
 .footer-submit-button svg {
   margin-left: 30px;
@@ -536,6 +545,7 @@ address {
   right: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  cursor: pointer;
 }
 .modal-button-icon {
   height: 18px;
@@ -549,6 +559,7 @@ address {
   margin: 40px 40px 12px 40px;
 }
 .modal-form-item {
+  margin-top: 10px;
   position: relative;
   margin-left: 40px;
   display: flex;
@@ -581,7 +592,7 @@ address {
   resize: none;
 }
 .modal-checkbox-label {
-  margin: 25px 52px;
+  margin: 25px 52px 10px 52px;
   flex-direction: row;
   align-items: flex-start;
   font: 400 14px/24px Roboto;
@@ -612,16 +623,28 @@ address {
   fill: var(--accent-color);
 }
 .modal-checkbox-icon {
-  padding: 1px;
   height: 15px;
-  width: 16px;
+  width: 15px;
   border-radius: 2px;
   display: none;
   position: absolute;
-  top: 3px;
-  left: -1px;
+  top: 4px;
+  left: 0;
   background-color: var(--accent-color);
+}
+.checkbox-appearance {
+  margin-top: 4px;
+  padding: 0;
+  width: 16px;
+  height: 15px;
+  appearance: none;
+  border: 2px solid #000000;
+  border-radius: 2px;
 }
 input[type="checkbox"]:checked + .modal-checkbox-icon {
   display: inline-block;
+}
+.terms-and-conditions-link:hover {
+  color: var(--accent-color);
+  text-decoration: underline var(--accent-color);
 }
